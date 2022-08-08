@@ -7,7 +7,7 @@
  *
  * Return: char
  */
-int print_op(const char *format, fmt_t *print_ar, va_list list)
+int print_op(const char *format, check_t *print_ar, va_list list)
 {
 	char a;
 	int count, b, c;
@@ -23,7 +23,7 @@ int print_op(const char *format, fmt_t *print_ar, va_list list)
 			b++;
 			a = format[b];
 			while (print_ar[c].type != NULL &&
-					a != *(pirnt_ar[c].type))
+					a != *(print_ar[c].type))
 				c++;
 			if (print_ar[c].type != NULL)
 				count += print_ar[c].f(list);
@@ -56,7 +56,7 @@ int _printf(const char *format, ...)
 	int a = 0;
 
 	check_t op[] = {
-		{"c", ch}
+		{"c", ch},
 		{"s", str},
 		{NULL, NULL}
 	};
