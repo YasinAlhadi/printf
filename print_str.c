@@ -20,7 +20,6 @@ int str(va_list string)
 	}
 	return (st);
 }
-
 /**
  * _strlength - gets string length
  * @string: string
