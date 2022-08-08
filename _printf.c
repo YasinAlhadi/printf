@@ -15,7 +15,7 @@ int print_op(const char *format, check_t *print_ar, va_list list)
 	count = 0;
 	b = 0;
 	a = format[b];
-	while (a != '%')
+	while (a != '\0')
 	{
 		if (a == '%')
 		{
