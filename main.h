@@ -16,8 +16,9 @@ typedef struct check
 } check_t;
 int _putchar(char c);
 int print_op(const char *format, check_t *print_ar, va_list list);
+int _printf(const char *format, ...);
 int ch(va_list character);
 int str(va_list string);
 int _strlength(char *string);
-int _printf(const char *format, ...);
+int print_int(va_list integ);
 #endif

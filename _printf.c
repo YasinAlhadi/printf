@@ -58,6 +58,8 @@ int _printf(const char *format, ...)
 	check_t op[] = {
 		{"c", ch},
 		{"s", str},
+		{"d", print_int},
+		{"i", print_int},
 		{NULL, NULL}
 	};
 	if (format == NULL)
