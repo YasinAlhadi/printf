@@ -21,4 +21,5 @@ int ch(va_list character);
 int str(va_list string);
 int _strlength(char *string);
 int print_int(va_list integ);
+int to_bin(va_list bin);
 #endif

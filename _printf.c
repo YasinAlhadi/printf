@@ -60,6 +60,7 @@ int _printf(const char *format, ...)
 		{"s", str},
 		{"d", print_int},
 		{"i", print_int},
+		{"b", to_bin},
 		{NULL, NULL}
 	};
 	if (format == NULL)
