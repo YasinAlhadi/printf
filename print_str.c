@@ -9,16 +9,17 @@
 int str(va_list string)
 {
 	int len;
-	char *str, st;
+	char *str;
 
 	str = va_arg(string, char *);
 	if (str == NULL)
 		str = "NULL";
-	for (len = 0; str[len] != '\0'; len++)
+	len = 0;
+	while (str[len] != '\0')
 	{
-		st = _putchar(str[len]);
+		len += _putchar(str[len]);
 	}
-	return (st);
+	return (len);
 }
 /**
  * _strlength - gets string length
